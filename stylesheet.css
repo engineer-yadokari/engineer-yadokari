@@ -2,15 +2,23 @@
   box-sizing:border-box;
 }
 
-.title {
-  color: #02ccba;
-  opacity:0.8;
-}
+
 
 body{
-  font-family:"Avenir Next";
+  font-family:"Hiragino Kaku Gothic ProN", sans-serif;
+  margin:0;
+
 }
 
+.title {
+  color: aqua;
+  opacity:0.9;
+}
+
+.container{
+  margin:0 auto;
+  width:95%;
+}
 
 
 .header-logo{
@@ -21,48 +29,72 @@ body{
 }
 
 .header-logo:hover{
-  color:red;
+  color:darkred;
   cursor:pointer;
 }
 
 header{
   background-color: gray;
   height:50px;
+  opacity:0.9;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10;
 }
 
-.header-wrapper{
+.header-left{
   color:white;
-  width:95%;
-  margin:0 auto;
+  line-height:50px;
+  float:left;
+}
+
+.header-right{
+  float: right;
+  margin-right: 25px;
+}
+
+.header-right a{
+  float:left;
+  padding: 0 10px;
+  color:white;
   line-height:50px;
 }
 
-.header-link{
-  background-color:white;
-  display:inline-block;
-  float:right;
-  padding: 0 10px;
+ .fab{
+   margin-right:5px;
+ }
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.fa-bars{
+.menue-bar{
   display:inline-block;
   float:right;
   padding-top:15px;
   font-size:20px;
-}
-
-
-.container{
-  margin:0 auto;
-  width:100%;
+  display:none;
 }
 
 .top-wrapper{
+  background-image: url(images/DSC_0169.JPG);
+  background-size:cover;
+  height:800px;
   text-align: center;
-  margin-top:100px;
 }
 
-.top-wrapper h2{
+.title-wrapper{
+  padding-top:100px;
+}
+
+.title-wrapper h2{
+  color:white;
   font-size:20px;
   font-weight: normal;
+}
+
+footer{
+  height:200px;
+  background-color:dimgray;
 }
