@@ -7,6 +7,7 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive-homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -22,9 +23,24 @@
             Note
           </a>
         </div>
-        <span href="#" class="menu-bar fas fa-bars" ></span>
+        <span class="menu-bar fas fa-bars" id="menu-show"></span>
       </div>
     </header>
+    <!-- モーダル部分 -->
+    <div class="menu-modal-wrapper" id="menu-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+          <a href="https://twitter.com/engineer_yado" target="_blank">
+            <span class="fab fa-twitter-square"></span>Twitter
+          </a>
+          <a href="https://note.com/tsuyoyado_note" target="_blank">
+            Note
+          </a>
+    </div>
+    </div>
+    <!-- モーダル終了　-->
     <div class="top-wrapper">
       <div class="container">
         <div class="title-wrapper">
@@ -47,5 +63,7 @@
         </div>
       </div>
     </footer>
+    <!--　jsの読み込み-->
+     <script src="script-hp.js"></script>
   </body>
 </html>
